@@ -1,0 +1,187 @@
+/* layout */
+.container {
+    padding: 0 var(--main-padding);
+    margin: auto;
+
+    @media (min-width: 768px) {
+        width: 80%;
+    }
+
+    @media (min-width: 991px) {
+        width: 70%;
+    }
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--main-padding);
+    flex-wrap: wrap;
+}
+
+.paper {
+    padding: var(--main-padding);
+    box-shadow: var(--out-line), var(--light-shadow);
+    background-color: var(--white-color);
+    color: var(--main-color);
+    border-radius: 7px;
+}
+
+.scroller {
+    overflow: scroll;
+    /* height: 300px; */
+}
+
+.small {
+    font-size: 18px;
+    background: var(--main-color);
+    padding: 5px 10px;
+    color: #4d4d4d;
+    border-radius: 5px;
+}
+
+.transparent {
+    background-color: transparent !important;
+    backdrop-filter: blur(50px);
+    /* color: #fff; */
+}
+
+.unset {
+    list-style: auto;
+    text-decoration: unset;
+    color: unset;
+}
+
+/* direction */
+.column {
+    flex-direction: column;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+/* alignment */
+.jc-start {
+    justify-content: flex-start;
+}
+
+.ai-start {
+    align-items: flex-start;
+}
+
+.center-x {
+    justify-content: center;
+}
+
+.center-y {
+    align-items: center;
+}
+
+/* display */
+.hidden {
+    display: none;
+}
+
+.hide-in-small {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.hide-in-large {
+    display: flex;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+/* text alignment */
+.text-start {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Guitters */
+.light-shadow {
+    box-shadow: var(--light-shadow);
+}
+.disable-guitters {
+    margin: 0;
+    padding: 0;
+}
+
+.no-shadow {
+    box-shadow: var(--out-line);
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mb {
+    margin-bottom: var(--main-padding);
+}
+
+.half-p {
+    padding: calc(var(--main-padding) / 2);
+}
+
+.full-p {
+    padding: var(--main-padding);
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.outline {
+    box-shadow: var(--out-line);
+}
+
+/* dimensions */
+.full-width {
+    width: 100%;
+    flex: 1;
+}
+
+.full-height {
+    height: 100%;
+    flex: 1;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+/* animation */
+.grow {
+    flex-grow: 1;
+}
+
+.shrink {
+    flex-grow: 0;
+}
+
+/* colors */
+.error {
+    background-color: red;
+    position: relative;
+
+    .hideBtn {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: red;
+    }
+}

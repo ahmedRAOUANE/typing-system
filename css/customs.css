@@ -1,0 +1,59 @@
+.app {
+    height: 100vh;
+    @media (min-width: 720px) {
+        padding: 20px;
+    }
+}
+
+.preview, .typingarea {
+    .header {
+        padding: 10px 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .output {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        height: calc(100% - 50px);
+        overflow: scroll;
+    }
+}
+
+.code {
+    border-radius: 10px;
+    gap: 0;
+
+    .codeHeader {
+        align-items: stretch;
+        padding: 10px;
+    }
+
+
+    .codeBody {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        textarea {
+            padding: 0;
+            min-height: 120px;
+            font-size: 18px;
+        }
+    }
+}
+
+.example {
+    border-radius: 10px;
+    gap: 0;
+
+    .exampleHeader {
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    .exampleBody {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        color: black;
+    }
+}

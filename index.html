@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing system</title>
+    <link rel="stylesheet" href="./css/globals.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/customs.css">
+</head>
+<body>
+    <div class="app full-width box center-x center-y">
+        <div class="box ai-start full-width full-height">
+            <div class="typingarea paper full-width full-height outline">
+                <textarea 
+                    autofocus
+                    name="typingarea" 
+                    id="typingarea" 
+                    class="full-width full-height"
+                    placeholder="type here"
+                ></textarea>
+            </div>
+            <div class="preview full-width full-height">
+                <div class="header paper full-width box outline">
+                    <span class="full-width">preview</span>
+                    <!-- <span  style="color: black;"></span> -->
+                    <input class="full-width small" type="text" id="title">
+                </div>
+                <div class="output paper full-width outline" style="color: black;">
+                    <div id="output"></div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
+

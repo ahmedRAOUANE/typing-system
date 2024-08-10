@@ -1,0 +1,117 @@
+:root {
+
+  /* padding */
+  --main-padding: 20px;
+  --button-padding: 0.6em 1.2em;
+
+  /* font */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color */
+  --main-color: #bababa;
+  --white-color: white;
+  --link-color: #4493f8;
+  color-scheme: light dark;
+  color: black;
+  background-color: var(--main-color);
+
+  /* text */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* shadow */
+  --out-line: 0 0 1px .7px #0000008a inset;
+  --light-shadow: 0 1px 10px 2px #00000040;
+  --heavy-shadow: 0 1px 8px 3px #00000078;
+
+  /* transition */
+  transition: .3s linear all;
+
+  /* spacing */
+  letter-spacing: 1px;
+}
+
+body {
+  height: 100vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+input,
+textarea {
+  padding: calc(var(--main-padding) / 2) calc(var(--main-padding) / 1.5);
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  /* flex: 1; */
+  font-size: 20px;
+  max-width: 100%;
+  width: 100%;
+  background-color: var(--white-color);
+  resize: vertical;
+  color: black;
+}
+
+input[name="checbox"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+}
+
+header {
+  padding: calc(var(--main-padding) / 2) var(--main-padding);
+}
+
+img {
+  max-width: 100%;
+  height: unset;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+code {
+  font-family: Consolas, "courier new";
+  padding: 2px;
+  font-size: 105%;
+  overflow: scroll;
+  width: 100%;
+}
+
+a {
+  color: #4493f8;
+  text-decoration: underline;
+}
+
+select {
+  &:focus {
+    outline: none;
+  }
+}

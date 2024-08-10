@@ -1,0 +1,105 @@
+# typing system V0.1:
+
+the "@section" part named tag and it means that this is a new section in this article you typing the section is a container holds the content in, the section can be nested
+	
+the "starts" part means that we startd a new section
+and the "ends" part means that we reached the of our section
+
+the "starts" and the "ends" parts are global parts can be used with the sections witch have a text content inside and the media sections are containig files so they don't have a "starts" and "ends" parts
+
+@section starts
+    ## typography
+    the text in this system are does not need a tag to define it, but there some things needs to be defined like heading
+
+    ### heading
+    in this system the heading words "titles", are defined with the # tag, # means h1 in html witch is the biggest on ## means h2 untill we stop ##### h5 witch is the samllest opens
+
+    ### links
+    the links in this system are defined by -> if you want to put only the url, you can use "alt word"-> the link here if you want to display the alt word insted of the url
+    "" the words between the doble coutes are the alternative word that displayed instead of the full url
+    -> the text after this sign treats as url
+
+    as an example: 
+    "google"->https://www.google.com this is a link lead's to google home page, the word you see is google
+@section ends
+
+@section starts
+    ## special sections
+
+    ### @code
+    @code starts html
+        <div>
+            this is a test code
+        </div>
+    @code ends
+
+    this is the code explanation
+    the "code" tag is a special section opens an area to type the code and display it styled and formatted
+    the part "html" to define witch programmin language is this code, that will help understanding the code and show it with better way
+
+    ### @example 
+    the @example tag is a special section to explain something in your concept
+    you can use other section or special sections inside
+
+    @example starts
+        @section starts
+            this is an example explains something about the concept
+        @section ends
+        @section starts
+            the "@example" tag is another special section means that is an example 
+            and we can control how it look's by adding other sections in
+        @section ends
+        @section starts
+            as an example this section will look the exact same as html ul an li's 
+        @section ends
+
+        @img -> 
+        
+        and the media tags we dont have to wrap them in section tag
+    @example ends
+@section ends
+
+@section starts
+    ## media files:
+    ### @img ->, @video ->, @audio ->
+    the "@img" tag means that is a media file type image in this section, when type the "->" after the "img" tag will active the "click" action on the add image button, witch give us the ability to add image or images in this article, the image/images displays in a section in this main section
+
+    the same with the video and the audio
+    @audio -> for audio files and @video for the video files
+@section ends
+
+@section starts
+    ## Upcomming features
+    ### notes and comments
+    @note and @comment these tow tags are hiding the content inside from the displayed content in Docs page 
+    the deffrent between them that the @note tag saves the noted section and still can display it of the reader clicked the note button 
+    but the @comment you will still can see it in the preview while you udating you concept and the reader cannot be able to see it 
+
+    for example
+    @note starts
+        this paragrapgh will be noted, the reader can see it when clicking on the note button, and the writer can see it on the preview directly
+
+        you can note other sections tow
+        as an example
+        @example starts
+            this is an example section inside the note section, and not only the exanple tage, you can use what ever you want
+        @example ends
+    @note ends
+
+    @comment starts
+        this is a comment special section, the reader is not able to see it, it's for the writer to use, he still be able to it while he writing or updating his concept
+
+        the same thing as note tag he can use other section inside the comment special section
+    @comment ends
+
+    the @note and @comment tags are the only special sections that can be used with no closing tag, it can be used with other section to comment or note them 
+
+    as an example
+    @example starts @note
+        this is a noted example and no need to close the @note tag, it is closing with the closing tag of the example
+    @example ends
+@section ends
+
+and the same with the @comment tag
+
+for now this is the current version of the typing system witch i will use in textarea, it will be helpfull to create and handle the concept with no need to click a button eatch time the user needs to upload file or creating a new section in his document
